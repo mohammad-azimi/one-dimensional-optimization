@@ -1,0 +1,20 @@
+[
+  {
+    "strategy": "Golden section",
+    "search_calls": 14,
+    "width": 0.013435651078497424,
+    "bound": 0.013435651078497438
+  },
+  {
+    "strategy": "One Fibonacci F15",
+    "search_calls": 14,
+    "width": 0.011590163934426245,
+    "bound": 0.01159016393442623
+  },
+  {
+    "strategy": "Two Fibonacci F8 stages",
+    "search_calls": 14,
+    "width": 0.015873015873015817,
+    "bound": 0.01619206349206349
+  }
+]

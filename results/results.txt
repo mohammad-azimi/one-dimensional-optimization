@@ -1,0 +1,36 @@
+f(x) = 1 + (x - sqrt(2))^2 + 0.2*(x - sqrt(2))^4
+Interval: [-2, 5]
+
+delta | Method          | x estimate | f(x)    | N search | N total | Error bound
+------+-----------------+------------+---------+----------+---------+------------
+0.1   | Uniform search  | 1.40       | 1.000   | 71       | 72      | 0.1        
+0.1   | Sequential scan | 1.40       | 1.000   | 36       | 37      | 0.1        
+0.1   | Dichotomy       | 1.45       | 1.001   | 12       | 13      | 0.06       
+0.1   | Golden section  | 1.38       | 1.001   | 9        | 10      | 0.075      
+0.1   | Fibonacci       | 1.37       | 1.002   | 9        | 10      | 0.064      
+0.01  | Uniform search  | 1.410      | 1.0000  | 701      | 702     | 0.01       
+0.01  | Sequential scan | 1.410      | 1.0000  | 343      | 344     | 0.01       
+0.01  | Dichotomy       | 1.411      | 1.0000  | 18       | 19      | 0.0073     
+0.01  | Golden section  | 1.412      | 1.0000  | 14       | 15      | 0.0067     
+0.01  | Fibonacci       | 1.407      | 1.0000  | 13       | 14      | 0.0094     
+0.001 | Uniform search  | 1.4140     | 1.00000 | 7001     | 7002    | 0.001      
+0.001 | Sequential scan | 1.4140     | 1.00000 | 3416     | 3417    | 0.001      
+0.001 | Dichotomy       | 1.4137     | 1.00000 | 24       | 25      | 0.0009     
+0.001 | Golden section  | 1.4146     | 1.00000 | 18       | 19      | 0.00098    
+0.001 | Fibonacci       | 1.4146     | 1.00000 | 18       | 19      | 0.00084    
+
+FIBONACCI RESTART EXPERIMENT
+delta | Method               | x estimate | f(x)    | N search | N total | Error bound
+------+----------------------+------------+---------+----------+---------+------------
+0.1   | Fibonacci            | 1.37       | 1.002   | 9        | 10      | 0.064      
+0.1   | Fibonacci restart F6 | 1.42       | 1.000   | 9        | 10      | 0.088      
+0.1   | Fibonacci restart F8 | 1.42       | 1.000   | 9        | 10      | 0.084      
+0.01  | Fibonacci            | 1.407      | 1.0000  | 13       | 14      | 0.0094     
+0.01  | Fibonacci restart F6 | 1.419      | 1.0000  | 15       | 16      | 0.0069     
+0.01  | Fibonacci restart F8 | 1.421      | 1.0000  | 14       | 15      | 0.0079     
+0.001 | Fibonacci            | 1.4146     | 1.00000 | 18       | 19      | 0.00084    
+0.001 | Fibonacci restart F6 | 1.4147     | 1.00000 | 20       | 21      | 0.00086    
+0.001 | Fibonacci restart F8 | 1.4145     | 1.00000 | 20       | 21      | 0.00061    
+
+N total = N search + 1 reporting call.
+Error bound applies to the unrounded midpoint.
