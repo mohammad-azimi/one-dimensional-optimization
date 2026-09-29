@@ -1,4 +1,3 @@
-"""Edit this file when the lecturer gives you a new problem."""
 import math
 
 
