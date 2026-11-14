@@ -1,0 +1,20 @@
+f(x) = 1/x + exp(x)
+Interval: [0.5, 1]
+
+delta   | Method          | x estimate | f(x)     | N search | N total | Error bound
+--------+-----------------+------------+----------+----------+---------+------------
+0.00049 | Uniform search  | 0.70323    | 3.442278 | 1022     | 1023    | 0.00049    
+0.00049 | Sequential scan | 0.70323    | 3.442278 | 417      | 418     | 0.00049    
+0.00049 | Dichotomy       | 0.70337    | 3.442277 | 20       | 21      | 0.00027    
+0.00049 | Golden section  | 0.70366    | 3.442277 | 14       | 15      | 0.00048    
+0.00049 | Fibonacci       | 0.70369    | 3.442277 | 14       | 15      | 0.00041    
+
+FIBONACCI RESTART EXPERIMENT
+delta   | Method               | x estimate | f(x)     | N search | N total | Error bound
+--------+----------------------+------------+----------+----------+---------+------------
+0.00049 | Fibonacci            | 0.70369    | 3.442277 | 14       | 15      | 0.00041    
+0.00049 | Fibonacci restart F6 | 0.70337    | 3.442277 | 17       | 18      | 0.00025    
+0.00049 | Fibonacci restart F8 | 0.70336    | 3.442277 | 16       | 17      | 0.00029    
+
+N total = N search + 1 reporting call.
+Error bound applies to the unrounded midpoint.
